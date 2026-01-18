@@ -1,19 +1,68 @@
-lo<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Biswas</title>
   <meta charset="UTF-8">
+  <title>Welcome!</title>
+  <style>
+    /* Reset margins */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+      animation: fadeIn 3s ease forwards;
+    }
+
+    .welcome-box {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 40px 60px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      animation: scaleUp 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes scaleUp {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
 </head>
-  <script>
-fetch("https://biswaspkhrel-github-io.onrender.com");
-</script>
-
 <body>
-  <h2>Hello! World</h2>
-  <p>
-    HI'm Biswas.
-  </p>
+  <div class="welcome-box">
+    <h1>👋 Welcome!</h1>
+    <p>Thank you for visiting my page. Have a great day! ✨</p>
+  </div>
 
-  <p>Thank you for visiting.</p>
+  <!-- Ping backend to log visit -->
+  <script>
+    fetch("https://YOUR_BACKEND_URL_HERE.onrender.com");
+  </script>
 </body>
 </html>

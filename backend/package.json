@@ -1,0 +1,10 @@
+{
+  "name": "visitor-logger",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.19.2",
+    "ua-parser-js": "^1.0.37",
+    "node-fetch": "^3.3.2"
+  }
+}
